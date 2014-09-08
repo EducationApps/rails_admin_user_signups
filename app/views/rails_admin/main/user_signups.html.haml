@@ -4,8 +4,10 @@
   %table.table.table-condensed.table-striped
     %thead
       %tr
-        %th: "Day"
-        %th: "Users Registered"
+        %th
+          = "Day"
+        %th
+          = "Users Registered"
     %tbody
       - @users_created_by_day.keys.each do |date|
         %tr

@@ -1,0 +1,11 @@
+
+en:
+  admin:
+    actions:
+      user_signups:
+        title: "User Signups"
+        menu: "User Signups"
+        breadcrumb: "User Signups"
+        link: "User Signups"
+        bulk_link: "User Signups}"
+        done: "User Signups"

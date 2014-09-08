@@ -1,7 +1,15 @@
-%h2 User signups
+:ruby
+  @users_created_by_day = User.count(:group => 'date(created_at)')
 #list
   %table.table.table-condensed.table-striped
     %thead
-      %th: "Month"
-      %th: "Users"
+      %tr
+        %th: "Day"
+        %th: "Users Registered"
     %tbody
+      - @users_created_by_day.keys.each do |date|
+      %tr
+        %td
+          = date
+        %td
+          = @users_created_by_day[date]

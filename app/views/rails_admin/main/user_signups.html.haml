@@ -9,7 +9,7 @@
         %th
           = "Users Registered"
     %tbody
-      - @users_created_by_day.keys.each do |date|
+      - @users_created_by_day.keys.sort.each do |date|
         %tr
           %td
             = date

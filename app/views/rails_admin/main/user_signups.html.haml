@@ -8,8 +8,8 @@
         %th: "Users Registered"
     %tbody
       - @users_created_by_day.keys.each do |date|
-      %tr
-        %td
-          = date
-        %td
-          = @users_created_by_day[date]
+        %tr
+          %td
+            = date
+          %td
+            = @users_created_by_day[date]
